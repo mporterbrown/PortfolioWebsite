@@ -11,6 +11,7 @@ export default function Projects() {
         top: 30vh;
         padding-top: 1rem;
         justify-content: space-between;
+        
     `;
 
     const LeftContent = styled.div`
