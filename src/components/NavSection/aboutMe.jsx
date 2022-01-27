@@ -23,7 +23,7 @@ const Image = styled.img`
     margin-bottom: 1rem;
 `;
 export default function AboutMe() {
-    return <>
+    return (
     <TextDiv>
         <Image src={headshotPath} alt="Headshot"/>
         <Paragraph>
@@ -38,6 +38,5 @@ export default function AboutMe() {
             Beyond my continued studies and interest in the programming realm, I have had a lifelong passion for music and continue to play and write music to this day. I also have a growing interest in 3D modeling, digital art, and interactive websites.
         </Paragraph>
     </TextDiv>
-        
-    </>
+    )
 }

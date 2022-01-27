@@ -13,8 +13,8 @@ import Resume from './components/NavSection/resume';
 const CanvasContainer = styled.div`
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -59,14 +59,12 @@ const NavItems = (props) => {
   }
  
   return (
-    <>
     <div style={NavDiv}>
       <h2><NavLink to="/aboutme" style={textStyle} className={(navData) => (navData.isActive ? "active-style-blue" : 'about_me')}onClick={()=> props.clickMe("blue")}>About Me</NavLink></h2>
       <h2><NavLink to="/projects" style={textStyle} className={(navData) => (navData.isActive ? "active-style-red" : 'projects')} onClick={()=> props.clickMe("red")}>Projects</NavLink></h2>
       <h2><NavLink to="/resume" style={textStyle} className={(navData) => (navData.isActive ? "active-style-yellow" : 'resume')} onClick={()=> props.clickMe("yellow")}>Resume</NavLink></h2>
       <h2><NavLink to="/contact" style={textStyleLast} className={(navData) => (navData.isActive ? "active-style-purple" : 'contact')} onClick={()=> props.clickMe("purple")}>Contact</NavLink></h2> 
     </div>
-    </>
   )
 }  
 
@@ -89,7 +87,6 @@ const Router = (props) => {
       <NavItems clickMe={props.clickMe}/>
         <div>
           <Routes>
-            {/* <Route path="/"/> */}
             <Route path="/aboutme" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>

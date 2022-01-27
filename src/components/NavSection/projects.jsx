@@ -5,7 +5,11 @@ export default function Projects() {
 
     const PageContent = styled.div`
         display: flex;
+        position: absolute;
         width: 90vw;
+        max-height: 55vh;
+        top: 30vh;
+        padding-top: 1rem;
         justify-content: space-between;
     `;
 
@@ -13,7 +17,7 @@ export default function Projects() {
         border-style: dotted double red;
         display: flex;
         flex-direction: column;
-        max-height: 37rem;
+        max-height: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         overflow-y: auto;
 
@@ -43,7 +47,7 @@ export default function Projects() {
     const RightContent = styled.div`
         display: flex;
         flex-direction: column;
-        max-height: 37rem;
+        max-height: 100%;
         float: right;
         padding-right: 0rem;
         background-color: rgba(0, 0, 0, 0.5);
@@ -91,11 +95,11 @@ export default function Projects() {
         font-style: italic;
     `;
 
-    return <>
+    return (
         <PageContent>
             <LeftContent>
-                <LinkedHeader href="https://github.com/mporterbrown/SPROJ" target="_blank" rel="noreferrer">Using Postgres as a Cache with MongoDB</LinkedHeader>
-                <Subheading>(Undergraduate Senior Thesis)</Subheading>
+                <LinkedHeader href="https://github.com/mporterbrown/PotsgresAsACacheWithMongoDB" target="_blank" rel="noreferrer">Using Postgres as a Cache with MongoDB</LinkedHeader>
+                <Subheading>Undergraduate Senior Thesis</Subheading>
                 <Paragraph>
                     <ul>
                         <li>Explored caching mongoDB queries and statistics in Postgres</li>
@@ -111,7 +115,7 @@ export default function Projects() {
                         <li>Created a remake of Berzerk using the TIC80 platform and the Lua programming language</li>
                     </ul>
                 </Paragraph>
-                <LinkedHeader href="https://github.com/mporterbrown/" target="_blank" rel="noreferrer">Portfolio Website</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/PortfolioWebsite" target="_blank" rel="noreferrer">Portfolio Website</LinkedHeader>
                 <Subheading>Solo Project</Subheading>
                 <Paragraph>
                     <ul>
@@ -149,6 +153,5 @@ export default function Projects() {
                 </Paragraph>
             </RightContent>
         </PageContent>
-    </>
-
+    )
 }
