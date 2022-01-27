@@ -31,7 +31,7 @@ export default function AboutMe() {
         </Paragraph>
         
         <Paragraph>
-            For the past year or so, while finishing up my degree at Bard, I completed an extensive full stack development course on Codecademy. I have a great interest in both front end and back end technologies and the process of building useful and responsive applications. For my senior thesis, I optimized a MongoDB database using Postgres as a cache. This was my first introduction to databases.  
+            For the past year or so, while finishing up my degree at Bard, I completed a full stack development course on Codecademy. I have a great interest in both front end and back end technologies and the process of building useful and responsive applications. For my senior thesis, I optimized a MongoDB database using Postgres as a cache. This was my first introduction to databases.  
         </Paragraph>
 
         <Paragraph>
