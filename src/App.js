@@ -52,14 +52,14 @@ const NavItems = (props) => {
     fontSize: "1.7rem"
     }
 
-  const NavDiv = {
+  const navDiv = {
     display: "flex",
     alignSelf: "flex-start",
     justifyContent: "space-between"
   }
  
   return (
-    <div style={NavDiv}>
+    <div style={navDiv}>
       <h2><NavLink to="/aboutme" style={textStyle} className={(navData) => (navData.isActive ? "active-style-blue" : 'about_me')}onClick={()=> props.clickMe("blue")}>About Me</NavLink></h2>
       <h2><NavLink to="/projects" style={textStyle} className={(navData) => (navData.isActive ? "active-style-red" : 'projects')} onClick={()=> props.clickMe("red")}>Projects</NavLink></h2>
       <h2><NavLink to="/resume" style={textStyle} className={(navData) => (navData.isActive ? "active-style-yellow" : 'resume')} onClick={()=> props.clickMe("yellow")}>Resume</NavLink></h2>

@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Contact() {
-
-    const Link = styled.a`
+const Link = styled.a`
         text-decoration: none;
         &:hover {
             color: purple;
-            font-size: 1.7rem;
+            text-shadow: 0 0 5px purple;
         }
     `
+    
+export default function Contact() {
 
     return <>
         <h2><Link href="mailto:mporterbrown@gmail.com" target="_blank" rel="noreferrer">mporterbrown@gmail.com</Link></h2>

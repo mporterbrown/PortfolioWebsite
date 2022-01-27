@@ -5,44 +5,55 @@
 
 .nav_name:hover {
   color: green;
+  text-shadow: 0 0 5px green;
 }
 
 .resume:hover {
   color: yellow;
+  text-shadow: 0 0 5px yellow;
 }
 
 .contact:hover {
   color: purple;
+  text-shadow: 0 0 5px purple;
 }
 
 .projects:hover {
   color: red;
+  text-shadow: 0 0 5px red;
 }
 
 .about_me:hover {
   color: blue;
+  text-shadow: 0 0 5px blue;
 }
 
 .active-style-green {
   color: green;
+  text-shadow: 0 0 5px green;
 }
 
 .active-style-red {
   color: red;
+  text-shadow: 0 0 5px red;
 }
 
 .active-style-blue {
   color: blue;
+  text-shadow: 0 0 5px blue;
 }
 
 .active-style-green {
   color: green;
+  text-shadow: 0 0 5px green;
 }
 
 .active-style-yellow {
   color: yellow;
+  text-shadow: 0 0 5px yellow;
 }
 
 .active-style-purple {
   color: purple;
+  text-shadow: 0 0 5px purple;
 }
