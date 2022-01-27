@@ -35,7 +35,7 @@ export default function AboutMe() {
         </Paragraph>
 
         <Paragraph>
-            Besides my continued studies and interest in programming, I make music and have a growing interest in 3D modeling, digital art, and interactive websites.
+            Besides my continued studies and interest in programming, I make music and have a growing interest in 3D modeling and digital art.
         </Paragraph>
     </TextDiv>
     )
