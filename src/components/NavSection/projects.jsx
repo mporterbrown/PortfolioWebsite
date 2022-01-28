@@ -121,7 +121,7 @@ export default function Projects() {
                 <Subheading>Scheme interpreter using Swift</Subheading>
                 <Paragraph>
                     <ul>
-                        <ListItem>Successfully interprets the main Scheme functions including Closure functionaListItemty</ListItem>
+                        <ListItem>Successfully interprets the main Scheme functions including Closure functionality</ListItem>
                         <ListItem>Implemented the Visitor Pattern</ListItem>
                     </ul>
                 </Paragraph>
