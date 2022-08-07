@@ -139,7 +139,7 @@ export default function Projects() {
                 <LinkedHeader href="https://github.com/mporterbrown/PianoGUI" target="_blank" rel="noreferrer">Guitar Emulator</LinkedHeader>
                 <Subheading>Synthesized Guitar Sample with Piano GUI</Subheading>
                 <Paragraph>
-                    <ul>``
+                    <ul>
                         <ListItem>Guitar sample generated using a ring buffer data structure</ListItem>
                         <ListItem>Piano GUI supports octave functionality</ListItem>
                         <ListItem>GUI built using JFrame</ListItem>

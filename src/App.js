@@ -87,6 +87,7 @@ const Router = (props) => {
       <NavItems clickMe={props.clickMe}/>
         <div>
           <Routes>
+            {/* <Route exact path="/" component={Empty}/> */}
             <Route path="/aboutme" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>
