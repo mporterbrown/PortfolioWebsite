@@ -1,14 +1,14 @@
-import './App.css';
-import { Canvas } from '@react-three/fiber';
+import './App.css'
+import { Canvas } from '@react-three/fiber'
 import styled from 'styled-components'
-import { Suspense, useState } from 'react';
-import { WireSphere } from './components/sphere';
-import Felix from './components/felix';
-import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
+import { Suspense, useState } from 'react'
+import { WireSphere } from './components/sphere'
+import Felix from './components/felix'
+import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom'
 import AboutMe from './components/NavSection/aboutMe'
 import Contact from './components/NavSection/contact'
-import Projects from './components/NavSection/projects';
-import Resume from './components/NavSection/resume';
+import Projects from './components/NavSection/projects'
+import Resume from './components/NavSection/resume'
 
 const CanvasContainer = styled.div`
   margin: 0;
@@ -19,7 +19,7 @@ const CanvasContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-`;
+`
 
 const NotFound = () => {
   return (
@@ -34,9 +34,11 @@ export const NavName = (props) => {
   }
   
   return (
-    <>
-      <h1><NavLink to="" style={style} className={(navData) => (navData.isActive ? "active-style-green" : 'nav_name')} onClick={() => props.clickMe('green')}>Mason Porter-Brown</NavLink></h1>
-    </>
+    <h1>
+      <NavLink to="" style={style} className={(navData) => (navData.isActive ? "active-style-green" : 'nav_name')} onClick={() => props.clickMe('green')}>
+        Mason Porter-Brown
+      </NavLink>
+    </h1>
   )
 }
 
@@ -60,10 +62,25 @@ const NavItems = (props) => {
  
   return (
     <div style={navDiv}>
-      <h2><NavLink to="/aboutme" style={textStyle} className={(navData) => (navData.isActive ? "active-style-blue" : 'about_me')}onClick={()=> props.clickMe("blue")}>About Me</NavLink></h2>
-      <h2><NavLink to="/projects" style={textStyle} className={(navData) => (navData.isActive ? "active-style-red" : 'projects')} onClick={()=> props.clickMe("red")}>Projects</NavLink></h2>
-      <h2><NavLink to="/resume" style={textStyle} className={(navData) => (navData.isActive ? "active-style-yellow" : 'resume')} onClick={()=> props.clickMe("yellow")}>Resume</NavLink></h2>
-      <h2><NavLink to="/contact" style={textStyleLast} className={(navData) => (navData.isActive ? "active-style-purple" : 'contact')} onClick={()=> props.clickMe("purple")}>Contact</NavLink></h2> 
+      <h2>
+        <NavLink to="/aboutme" style={textStyle} className={(navData) => (navData.isActive ? "active-style-blue" : 'about_me')}onClick={()=> props.clickMe("blue")}>
+          About Me
+        </NavLink></h2>
+      <h2>
+        <NavLink to="/projects" style={textStyle} className={(navData) => (navData.isActive ? "active-style-red" : 'projects')} onClick={()=> props.clickMe("red")}>
+          Projects
+        </NavLink>
+      </h2>
+      <h2>
+        <NavLink to="/resume" style={textStyle} className={(navData) => (navData.isActive ? "active-style-yellow" : 'resume')} onClick={()=> props.clickMe("yellow")}>
+          Resume
+        </NavLink>
+      </h2>
+      <h2>
+        <NavLink to="/contact" style={textStyleLast} className={(navData) => (navData.isActive ? "active-style-purple" : 'contact')} onClick={()=> props.clickMe("purple")}>
+          Contact
+        </NavLink>
+      </h2> 
     </div>
   )
 }  
@@ -83,11 +100,10 @@ const Router = (props) => {
   return (
     <div style={style}>
       <BrowserRouter>
-      <NavName clickMe={props.clickMe}/>
-      <NavItems clickMe={props.clickMe}/>
+        <NavName clickMe={props.clickMe}/>
+        <NavItems clickMe={props.clickMe}/>
         <div>
           <Routes>
-            {/* <Route exact path="/" component={Empty}/> */}
             <Route path="/aboutme" element={<AboutMe/>}/>
             <Route path="/projects" element={<Projects/>}/>
             <Route path="/resume" element={<Resume/>}/>
@@ -101,28 +117,23 @@ const Router = (props) => {
 }
 
 function App() {
-  const [color, setColor] = useState('green');
+  const [color, setColor] = useState('green')
 
   const changeColor = (color) => {
-    setColor(color);
+    setColor(color)
   }
 
   return (
-    <>
-      <CanvasContainer>
-
-        <Router clickMe={changeColor}/>
-
-        <Canvas>
-          <Suspense fallback={null}>
-            <WireSphere color = {color}/>
-            <Felix />
-          </Suspense>
-        </Canvas>
-
-      </CanvasContainer>
-    </>
-  );
+    <CanvasContainer>
+      <Router clickMe={changeColor}/>
+      <Canvas>
+        <Suspense fallback={null}>
+          <WireSphere color = {color}/>
+          <Felix />
+        </Suspense>
+      </Canvas>
+    </CanvasContainer>
+  )
 }
 
-export default App;
+export default App

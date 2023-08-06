@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import styled from 'styled-components'
 
 const PageContent = styled.div`
@@ -9,7 +9,7 @@ const PageContent = styled.div`
     top: 30vh;
     padding-top: 1rem;
     justify-content: space-between;
-`;
+`
 
 const LeftContent = styled.div`
     display: flex;
@@ -38,7 +38,7 @@ const LeftContent = styled.div`
     background: rgba(255,0,0,0.5);
     border-radius: 4px;
     }
-`;
+`
 
 const RightContent = styled.div`
     display: flex;
@@ -48,7 +48,6 @@ const RightContent = styled.div`
     padding-right: 0rem;
     background-color: rgba(0, 0, 0, 0.5);
     overflow-y: auto;
-    /* width */
     ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
@@ -68,17 +67,17 @@ const RightContent = styled.div`
     background: rgba(255,0,0,0.5);
     border-radius: 4px;
     }
-`;
+`
 
 const Paragraph = styled.ul`
     margin-top: 0;
     max-width: 32rem;
-`;
+`
 
 const ListItem = styled.li`
     padding-bottom: 0.5rem;
     font-weight: bold;
-`;
+`
 
 const LinkedHeader = styled.a`
     font-weight: bold;
@@ -90,26 +89,33 @@ const LinkedHeader = styled.a`
         color: red;
         text-shadow: 0 0 5px red;
     }
-`;
+`
 
 const Subheading = styled.h3`
     font-size: 1.2rem;
     font-style: italic;
-`;
+`
 
 export default function Projects() {
-
     return (
         <PageContent>
             <LeftContent>
                 <LinkedHeader href="https://github.com/mporterbrown/PotsgresAsACacheWithMongoDB" target="_blank" rel="noreferrer">Using Postgres as a Cache with MongoDB</LinkedHeader>
                 <Subheading>Undergraduate Senior Thesis</Subheading>
                 <Paragraph>
-                        <ListItem style={{"paddingBottom": "0.5rem"}}>Explored caching mongoDB queries and statistics in Postgres</ListItem>
-                        <ListItem>Implemented a feature that automatically detects if a new mongoDB query can be satisfied by carrying out Joins, Subsets, or Unions of already cached data</ListItem>
-                        <ListItem> Avoids the need to make unnecessary queries to MongoDB servers and successfully increased efficiency of queries</ListItem>
+                        <ListItem style={{"paddingBottom": "0.5rem"}}>
+                            Explored caching mongoDB queries and statistics in Postgres
+                        </ListItem>
+                        <ListItem>
+                            Implemented a feature that automatically detects if a new mongoDB query can be satisfied by carrying out Joins, Subsets, or Unions of already cached data
+                        </ListItem>
+                        <ListItem> 
+                            Avoids the need to make unnecessary queries to MongoDB servers and successfully increased efficiency of queries
+                        </ListItem>
                 </Paragraph>
-                <LinkedHeader href="https://github.com/mporterbrown/BerzerkRemake" target="_blank" rel="noreferrer">Berzerk Remake</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/BerzerkRemake" target="_blank" rel="noreferrer">
+                    Berzerk Remake
+                </LinkedHeader>
                 <Subheading>Remake of Atari 2600 Version of “Berzerk” the game</Subheading>
                 <Paragraph>
                     <ul>
@@ -117,7 +123,9 @@ export default function Projects() {
                         <ListItem>Created a remake of Berzerk using the TIC80 platform and the Lua programming language</ListItem>
                     </ul>
                 </Paragraph>
-                <LinkedHeader href="https://github.com/mporterbrown/Scheme-Interpreter-In-Swift" target="_blank" rel="noreferrer">Scheme Interpreter</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/Scheme-Interpreter-In-Swift" target="_blank" rel="noreferrer">
+                    Scheme Interpreter
+                </LinkedHeader>
                 <Subheading>Scheme interpreter using Swift</Subheading>
                 <Paragraph>
                     <ul>
@@ -128,7 +136,9 @@ export default function Projects() {
             </LeftContent>
 
             <RightContent>
-                <LinkedHeader href="https://github.com/mporterbrown/ConvexHull" target="_blank" rel="noreferrer">Convex Hull</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/ConvexHull" target="_blank" rel="noreferrer">
+                    Convex Hull
+                </LinkedHeader>
                 <Subheading>Provides Graphic of Convex Hull</Subheading>
                 <Paragraph>
                     <ul>
@@ -136,7 +146,9 @@ export default function Projects() {
                         <ListItem>Program generates random points and draws resulting convex hull</ListItem>
                     </ul>
                 </Paragraph>
-                <LinkedHeader href="https://github.com/mporterbrown/PianoGUI" target="_blank" rel="noreferrer">Guitar Emulator</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/PianoGUI" target="_blank" rel="noreferrer">
+                    Guitar Emulator
+                </LinkedHeader>
                 <Subheading>Synthesized Guitar Sample with Piano GUI</Subheading>
                 <Paragraph>
                     <ul>
@@ -145,7 +157,9 @@ export default function Projects() {
                         <ListItem>GUI built using JFrame</ListItem>
                     </ul>
                 </Paragraph>
-                <LinkedHeader href="https://github.com/mporterbrown/PortfolioWebsite" target="_blank" rel="noreferrer">Portfolio Website</LinkedHeader>
+                <LinkedHeader href="https://github.com/mporterbrown/PortfolioWebsite" target="_blank" rel="noreferrer">
+                    Portfolio Website
+                </LinkedHeader>
                 <Subheading>Solo Project</Subheading>
                 <Paragraph>
                     <ul>
