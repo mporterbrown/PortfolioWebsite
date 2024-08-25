@@ -55,16 +55,26 @@ const Image = styled.img`
     filter: grayscale(100%);
 `
 
+const star = '✪'
+const starBanner = Array(33).fill(star).join(' ');
+
 export default function AboutMe() {
     return (
         <Container>
             <Content>
                 <Image src={headshotPath} alt="Headshot"/>
                 <Paragraph>
-                    I am a CS graduate from Bard College. I transferred to Bard in 2019 after sparking an interest in programming. I was previously attending CCNY's Sonic Arts program, where I learned a lot about music production and technology. Currently a Software Engineer at Quantcast.  
+                    {starBanner}
+                </Paragraph>  
+                <Paragraph>
+                    I'm a Software Engineer from Miami, FL living in New York, NY.
+                    I've been working at Quantcast since 2022.  
                 </Paragraph>
                 <Paragraph>
-                    Besides my continued studies and interest in programming, I make music and have a growing interest in 3D modeling and digital art.
+                    Besides my continued studies and interest in programming, I write and produce music and have a growing interest in 3D modeling and digital art.
+                </Paragraph>
+                <Paragraph>
+                    {starBanner}
                 </Paragraph>
             </Content>
         </Container>
