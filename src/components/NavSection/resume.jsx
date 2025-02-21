@@ -1,5 +1,5 @@
 import React from 'react'
-import pdf from '../../Documents/Porter-Brown_Resume.pdf'
+import pdf from '../../Documents/porter-brown_resume.pdf'
 import styled from 'styled-components'
 
 const Link = styled.a`
